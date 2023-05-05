@@ -1,0 +1,57 @@
+.property-image-area {
+  border-radius: 10px;
+  height: auto;
+  background: #000;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.property-image-area .favorite {
+  position: absolute;
+  color: #fff;
+  right: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+
+.property-image-area img {
+  width: 100%;
+  height: auto;
+}
+
+/* Profile card */
+.property-image-area .profile-card {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #f9f9f9;
+  width: 80px;
+  height: 100px;
+  border-radius: 5px 15px 15px 5px;
+  z-index: 2;
+}
+
+.property-image-area .card-sub {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background: rgba(223, 223, 223, 0.792);
+  width: 80px;
+  height: 90px;
+  border-radius: 5px 15px 15px 5px;
+  z-index: 1;
+}
+
+.property-image-area .profile-card-image {
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border-radius: 90px;
+  overflow: hidden;
+}
+
+.property-image-area .favorite:hover,
+.property-image-area .profile-card:hover {
+  cursor: pointer;
+}
