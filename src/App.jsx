@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { FiSearch } from 'react-icons/fi'
 import { RiEqualizerLine } from 'react-icons/ri'
@@ -15,6 +15,8 @@ import { FaRegUserCircle } from 'react-icons/fa'
 import Property from './components/property/Property'
 import properties from './data'
 import Profile from './components/profile/Profile'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
   const [showProfilePopup, setShowProfilePopup] = useState(false)
@@ -26,6 +28,12 @@ function App() {
   const hideProfile = () => {
     setShowProfilePopup(false)
   }
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
 
   return (
     <>

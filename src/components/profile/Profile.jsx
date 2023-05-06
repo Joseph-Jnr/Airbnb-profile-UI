@@ -17,9 +17,12 @@ const Profile = ({ open, handleClose }) => {
               <div className='bar-container py-2 flex justify-center'>
                 <div className='bar'></div>
               </div>
-              {/* Profile Card */}
-              <div className='profile-modal-card shadow-md grid grid-cols-2 gap-5 items-center'>
-                <div className='pc-img text-center flex justify-center flex-col items-center'>
+              {/* Profile Card grid grid-cols-2 gap-5  */}
+              <div className='profile-modal-card shadow-md shadow-gray-300 flex justify-between items-center'>
+                <div
+                  className='pc-img w-full py-[35px] bg-slate-400 text-center flex justify-center flex-col items-center'
+                  data-aos='flip-left'
+                >
                   <div className='img-area'>
                     <div className='pc-img-wrap'>
                       <img src={profileImage} alt='user' />
@@ -36,16 +39,19 @@ const Profile = ({ open, handleClose }) => {
                     Superhost
                   </p>
                 </div>
-                <div className='pc-detail'>
-                  <div className='pc-detail-desc'>
+                <div
+                  className='pc-detail w-full pt-[18px] pb-[30px] bg-slate-400'
+                  data-aos='flip-right'
+                >
+                  <div className='pc-detail-desc pl-4'>
                     <h1>17</h1>
                     <p>Reviews</p>
                   </div>
-                  <div className='pc-detail-desc'>
+                  <div className='pc-detail-desc pl-4'>
                     <h1>4.89</h1>
                     <p>Rating</p>
                   </div>
-                  <div className='pc-detail-desc'>
+                  <div className='pc-detail-desc pl-4'>
                     <h1>2</h1>
                     <p>Years Hosting</p>
                   </div>

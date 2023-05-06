@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 999;
   border-radius: 25px 25px 0px 0px;
-  animation: slide-in-up 2s ease forwards;
+  animation: slide-in-up 1s ease forwards;
   padding-bottom: 30px;
 }
 
@@ -45,10 +45,20 @@
 }
 
 .profile-modal-card {
-  background: #fff;
+  background: transparent;
   margin-top: 10px;
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   border-radius: 20px;
+}
+
+.profile-modal-card .pc-img {
+  background: #fff;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.profile-modal-card .pc-detail {
+  background: #fff;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .profile-modal-card .pc-img-wrap {
@@ -90,8 +100,8 @@
 
 .pc-detail-desc p {
   font-weight: bold;
-  font-size: 13px;
-  margin-top: -5px;
+  font-size: 11px;
+  margin-top: -3px;
 }
 
 .single-detail {
